@@ -2,20 +2,28 @@ import os
 import requests
 import json
 import time
-from pyfiglet import Figlet
+
 import calendar as c
 import wikipedia as wiki
 import webbrowser as web
-#CoreD I4 is an engine for shellsys
+#CoreD 2 is an engine for LOGIC
 
 
-def kelvic(c):
-    r1=(c+273)
-    print(r1)
+#cache variables
+c1=('')  
+c2=('') 
+c3=('') 
+c4=('') 
+c5=('') 
+c6=('')
+c7=(')')
+def kelvic(c1):
+    c2=(c1+273)
+    print(c2)
 
-def centif(f):
-    r2=((9/5)*f+32)
-    print(r2)
+def centif(c4):
+    c3=((9/5)*c4+32)
+    print(c3)
 
 def build():
     os.system('cmd/c "build.bat"')
@@ -30,10 +38,22 @@ def crtmail(usr):
         print('mail received:'+data)
     
 def fetchinfo():
-    op1 = Figlet()
-    print(op1.renderText('CoreD I4'))
-    print('Shell Version:v1')
-    print('Engine:CoreD I4')
+    print("""
+████████████████████████████████████████████████████████████████████████
+█░░░░░░█████████░░░░░░░░░░░░░░█░░░░░░░░░░░░░░█░░░░░░░░░░█░░░░░░░░░░░░░░█
+█░░▄▀░░█████████░░▄▀▄▀▄▀▄▀▄▀░░█░░▄▀▄▀▄▀▄▀▄▀░░█░░▄▀▄▀▄▀░░█░░▄▀▄▀▄▀▄▀▄▀░░█
+█░░▄▀░░█████████░░▄▀░░░░░░▄▀░░█░░▄▀░░░░░░░░░░█░░░░▄▀░░░░█░░▄▀░░░░░░░░░░█
+█░░▄▀░░█████████░░▄▀░░██░░▄▀░░█░░▄▀░░███████████░░▄▀░░███░░▄▀░░█████████
+█░░▄▀░░█████████░░▄▀░░██░░▄▀░░█░░▄▀░░███████████░░▄▀░░███░░▄▀░░█████████
+█░░▄▀░░█████████░░▄▀░░██░░▄▀░░█░░▄▀░░██░░░░░░███░░▄▀░░███░░▄▀░░█████████
+█░░▄▀░░█████████░░▄▀░░██░░▄▀░░█░░▄▀░░██░░▄▀░░███░░▄▀░░███░░▄▀░░█████████
+█░░▄▀░░█████████░░▄▀░░██░░▄▀░░█░░▄▀░░██░░▄▀░░███░░▄▀░░███░░▄▀░░█████████
+█░░▄▀░░░░░░░░░░█░░▄▀░░░░░░▄▀░░█░░▄▀░░░░░░▄▀░░█░░░░▄▀░░░░█░░▄▀░░░░░░░░░░█
+█░░▄▀▄▀▄▀▄▀▄▀░░█░░▄▀▄▀▄▀▄▀▄▀░░█░░▄▀▄▀▄▀▄▀▄▀░░█░░▄▀▄▀▄▀░░█░░▄▀▄▀▄▀▄▀▄▀░░█
+█░░░░░░░░░░░░░░█░░░░░░░░░░░░░░█░░░░░░░░░░░░░░█░░░░░░░░░░█░░░░░░░░░░░░░░█
+████████████████████████████████████████████████████████████████████████""")
+    print('LOGIC:v1')
+    print('Engine:CoreD 2')
     print('Developer:Blackhatdog')
     print('Version:Dev')
 
@@ -45,15 +65,39 @@ def calendarmm(y2,mm):
     print(clm)
 
 
-class onlineutilities:
+class webutils:
     def search(topic):
         data=(wiki.summary(topic))
         print(data)
     def openpage(url):
         web.open(url)
 
+
+
+
+def dc_oct(c6):
+    print(oct(c6))
+
+
+def dc_hex(c7):
+    print(hex(c7))
     
+
         
-        
+def clr_cache():
+    c1=('')  
+    c2=('') 
+    c3=('') 
+    c4=('') 
+    c5=('') 
+    c6=('') 
+    c7=('') 
+
+
+def shutdown():
+    print('Thank you for using LOGIC')
+    print('Shutting down.....')
+    time.sleep(5)
+    quit()
 
 
